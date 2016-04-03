@@ -2,9 +2,6 @@ import json
 import re
 import sys
 
-def warning(text):
-    print >>sys.stderr, "WARNING:", text
-
 def load_sent(fname):
     with open(fname) as f:
         entries = (l.split('\t') for l in f)
